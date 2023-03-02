@@ -61,7 +61,15 @@ public class DistanceBetweenTest {
 	public void testPointsD() {
 		// TODO: FIXME!  This test has an error
 		// Test that the distance between (0,0) and (30,40) is 50.0 (order of parameters matters!)
-		assertEquals(50.0, Methods.distanceBetween(0.0, 30.0, 0.0, 40.0), 1e-5);
+		assertEquals(50.0, Methods.distanceBetween(0.0, 0.0, 30.0, 40.0), 1e-5);
+	}
+	/*
+	 * @Test must be added to the top of the method so it is added to the test
+	 * Verifies that the distance between (8,9) and (5,5) is 5.0
+	 */
+	@Test
+	public void testPointsE() {
+		assertEquals(5.0, Methods.distanceBetween(5.0, 5.0, 8.0, 9.0), 1e-5);
 	}
 
 }
